@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Contact</title>
+  </head>
+  <body>
+    <header>
+      <h2>FORM DATA</h2>
+      <nav>
+        <a href="index.html"> Kembali ke Biografi</a>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Data User</legend>
+          <label for="name">Nama</label>
+          <input type="text" placeholder="your name" id="name" />
+          <br />
+          <br />
+          <label for="email">Email</label>
+          <input type="email" name="email" required />
+          <br />
+          <br />
+          <label for="date">Tanggal Lahir </label>
+          <input id="date" type="date" />
+          <br />
+          <br />
+          <label>Jenis Kelamin </label> <br />
+          <input type="radio" value="0" name="gender" /> laki-laki <br />
+          <input type="radio" value="1" name="gender" /> Perempuan <br />
+        </fieldset>
+        <fieldset>
+          <legend>Others</legend>
+          <br />
+          <label for="">Hobi</label>
+          <br />
+          <input type="checkbox" name="hobby" value="0" /> Traveling <br />
+          <input type="checkbox" name="hobby" value="1" /> Reading <br />
+          <input type="checkbox" name="hobby" value="2" /> Writing <br />
+          <input type="checkbox" name="hobby" value="3" /> Coding <br />
+          <input type="checkbox" name="hobby" value="4" /> Makan <br />
+          <input type="checkbox" name="hobby" value="5" /> Tidur <br />
+          <br />
+          <label for=""> Negara </label>
+
+          <select>
+            <optgroup label="Asia">
+              <option value="0"> indonesia </option>
+              <option value="1"> Singapore </option>
+              <option value="2"> Malaysia </option>
+              <option value="3"> Japan </option>
+              <option value="4"> Myanmar </option>
+              <option value="5"> Thailand </option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="6"> Germany </option>
+              <option value="7"> Italiy </option>
+              <option value="8"> France </option>
+            </optgroup>
+          </select>
+          <br /><br />
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            cols="100"
+            rows="5"
+            placeholder="pesan untuk fadhil..."
+          ></textarea>
+          <br />
+        </fieldset>
+        <br />
+        <input type="submit" value="Send Data" />
+      </form>
+    </main>
+  </body>
+</html>
